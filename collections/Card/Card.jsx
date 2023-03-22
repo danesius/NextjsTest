@@ -5,7 +5,7 @@ export const Card = ({ image, title, text }) => {
         <CardContainer>
 
             <IconContainer>
-                <Image layout="responsive" src={image.src} width={image.width} height={image.height} alt={image.alt} />
+                <Image src={image.src} alt={image.alt} width={image.width} height={image.height} />
             </IconContainer>
 
             <ContentContainer>

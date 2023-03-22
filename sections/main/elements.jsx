@@ -5,14 +5,14 @@ import { SectionContainer, SectionHeading, SectionSubheading } from "~/component
 export const Container = styled(({ ...props }) => (
   <SectionContainer {...props} />
 ))`
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 4rem;
-background-image: url("../../resources/background.png");
-background-size: contain;
-background-repeat: no-repeat;
 
+flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  background-image: url("/img/background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
 `;
 
 
@@ -44,13 +44,14 @@ export const HeaderSubtext = styled(({ ...props }) => (
 export const MainSection = styled(({ ...props }) => (
   <SectionContainer {...props} />
 ))`
-display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px 5rem;
-  margin-bottom: 5rem;
-@media(max-width: 1024px) {
-    flex-direction: row;}
+flex-direction: column;
+gap: 4rem;
+width: min(1100px, 85%);
+padding-bottom: 3rem;
+@media (min-width: 1024px) {
+  flex-direction: row;
+  
+}
   `;
 
 

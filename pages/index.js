@@ -14,21 +14,21 @@ const MainProps = {
   order: [
     {
       id: 1,
-      image: { src: "/img/icon1.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon1.png", alt: "", width: 50, height: 50 },
       title: "Brief",
       text:
         "Complete<b> brief writing or simple guidance<b/> on what to include, we've got you covered",
     },
     {
       id: 2,
-      image: { src: "/img/icon2.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon2.png", alt: "", width: 50, height: 50 },
       title: "Search",
       text:
         "In depth agency search covering; <b>criteria matching<b/>, door knocking and due-dilligence vetting",
     },
     {
       id: 3,
-      image: { src: "/img/icon3.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon3.png", alt: "", width: 50, height: 50 },
       title: "Pitch",
       text:
         "Comprehensive <b>pitch management<b/> including comms, diary managment and pitch hosting"

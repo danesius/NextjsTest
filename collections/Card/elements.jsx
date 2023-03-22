@@ -6,32 +6,31 @@ import { SectionSubheading, SectionParagraph } from "~/components";
 
 
 export const CardContainer = styled(({ ...props }) => <div{...props} />)`
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: rgba(244, 244, 244, 255);
-    border-radius: 15px;
-    border: 2px solid transparent;
     margin-right: ${({ position }) =>
     position === 2 ? "0" : position === 1 ? "1rem" : "2rem"};
-
-    :hover {
-        cursor: pointer;
-        border: 2px solid #1e7efb;
-        h2 {
-          color: #1e7efb;
-          text-decoration: underline;
-        }}
-
+  display: flex;
+  background: rgba(244, 244, 244, 255);
+  border-radius: 15px;
+  border: 2px solid transparent;
+  :hover {
+    border: 2px solid #1e7efb;
+    h3 {
+      color: #1e7efb;
+      text-decoration: underline;
+    }
+    cursor: pointer;
+  }
 `;
 
 export const IconContainer = styled(({ ...props }) => <div{...props} />)`
 display: flex;
 max-width: 5rem;
 max-height: 5rem;
+width: 100%;
+height: 100%;
 justify-content: center;
-  align-self: center;
-
+align-self: center;
+padding: 2rem;
 
 
 `;
