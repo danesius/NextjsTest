@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Card } from "../../collections/Card/Card";
-
+import { Container, Header, headerText, headerSubtext, mainSection, imageContainer, cardContainer } from "./elements"
 
 export const main = ({ image, title, text, oreder, ...props }) => {
     return (
