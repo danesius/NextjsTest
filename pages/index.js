@@ -8,31 +8,30 @@ const heroProps = {
   ctaText: "Start",
 };
 const mainProps = {
-  image: { src: "..//resources/video.png", alt: "", width: 400, height: 500 },
+  image: { src: "../resources/video.png", alt: "", width: 400, height: 500 },
   title: "Managed agency selection",
   text: "Strengthen your onboarding process",
   order: [
     {
       id: 1,
-      image: { src: "", alt: "", width: 75, height: 75 },
+      image: { src: "../resources/icon1.png", alt: "", width: 35, height: 35 },
       title: "Brief",
       text:
         "Complete brief writing or simple guidance on what to include, we've got you covered",
     },
     {
       id: 2,
-      image: { src: "", alt: "", width: 75, height: 75 },
+      image: { src: "../resources/icon2.png", alt: "", width: 35, height: 35 },
       title: "Search",
       text:
         "In depth agency search covering; criteria matching, door knocking and due-dilligence vetting",
     },
     {
       id: 3,
-      image: { src: "", alt: "", width: 75, height: 75 },
+      image: { src: "../resources/icon3.png", alt: "", width: 35, height: 35 },
       title: "Pitch",
       text:
-        "Comprehensive pitch management including comms, diary managment and pitch hosting",
-      underline: "true",
+        "Comprehensive pitch management including comms, diary managment and pitch hosting"35
     },
   ],
 
