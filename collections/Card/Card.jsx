@@ -1,7 +1,5 @@
 import Image from "next/image";
-import {
-    cardContainer, iconContainer, contentContainer, styledTitle, styledText
-} from "./elements"
+import { cardContainer, iconContainer, contentContainer, styledTitle, styledText } from "./elements"
 export const Card = ({ image, title, text }) => {
     return (
         <cardContainer>
