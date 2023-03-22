@@ -1,5 +1,5 @@
 import { Hero } from "../sections";
-import { main } from "../sections/Main/";
+import { Main } from "../sections/Main/";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -8,11 +8,33 @@ const heroProps = {
   ctaText: "Start",
 };
 const mainProps = {
-  image: {
-    src: "../resorurces/video.png", alt: "", width: 400, height: 500
-  }
+  image: { src: "..//resources/video.png", alt: "", width: 400, height: 500 },
   title: "Managed agency selection",
-  description: "Strengthen your onboarding process",
+  text: "Strengthen your onboarding process",
+  order: [
+    {
+      id: 1,
+      image: { src: "", alt: "", width: 75, height: 75 },
+      title: "Brief",
+      text:
+        "Complete brief writing or simple guidance on what to include, we've got you covered",
+    },
+    {
+      id: 2,
+      image: { src: "", alt: "", width: 75, height: 75 },
+      title: "Search",
+      text:
+        "In depth agency search covering; criteria matching, door knocking and due-dilligence vetting",
+    },
+    {
+      id: 3,
+      image: { src: "", alt: "", width: 75, height: 75 },
+      title: "Pitch",
+      text:
+        "Comprehensive pitch management including comms, diary managment and pitch hosting",
+      underline: "true",
+    },
+  ],
 
 }
 
@@ -30,7 +52,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        main {...mainProps}
+        < Main {...mainProps} />
       </div>
     </>
   );
