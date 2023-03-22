@@ -1,20 +1,20 @@
 import Image from "next/image";
 import { Card } from "../../collections/Card/Card";
-import { Container, Header, headerText, headerSubtext, mainSection, imageContainer, cardContainer } from "./elements"
+import { Container, Header, HeaderText, HeaderSubtext, MainSection, ImageContainer, CardContainer } from "./elements"
 
-export const main = ({ image, title, text, oreder, ...props }) => {
+export const Main = ({ image, title, text, order, ...props }) => {
     return (
 
         <Container>
             <Header>
-                <headerText> {title}</headerText>
-                <headerSubtext>{text}</headerSubtext>
+                <HeaderText>{title}</HeaderText>
+                <HeaderSubtext>{text}</HeaderSubtext>
             </Header>
-            <mainSection>
-                <imageContainer>
+            <MainSection>
+                <ImageContainer>
                     <Image layout="responsive" src={image.src} alt={image.alt} width={image.width} height={image.height} />
-                </imageContainer>
-                <cardContainer>
+                </ImageContainer>
+                <CardContainer>
                     {order.map((i) => (
                         <Card
                             key={i.id}
@@ -23,8 +23,8 @@ export const main = ({ image, title, text, oreder, ...props }) => {
                             text={i.text}
                         />
                     ))}
-                </cardContainer>
-            </mainSection>
+                </CardContainer>
+            </MainSection>
         </Container>
 
     )

@@ -3,7 +3,7 @@ import { SectionContainer, SectionHeading, SectionSubheading } from "~/component
 
 
 export const Container = styled(({ ...props }) => (
-    <SectionContainer {...props} />
+  <SectionContainer {...props} />
 ))`
 display: flex;
 flex-direction: column;
@@ -17,30 +17,32 @@ background-repeat: no-repeat;
 
 
 export const Header = styled(({ ...props }) => (
-    <SectionContainer {...props} />
+  <SectionContainer {...props} />
 ))`
     flex-direction: column;
   `;
 
-
-export const headerText = styled(({ ...props }) => (
-    <SectionHeading {...props} />
+export const HeaderText = styled(({ ...props }) => (
+  <SectionHeading {...props} />
 ))`
-  color: black;
-  text-align: center;
-`;
+    color: black;
+    text-align: center;
+   
+  `;
 
 
-export const headerSubtext = styled(({ ...props }) => (
-    <SectionSubheading {...props} />
+
+
+export const HeaderSubtext = styled(({ ...props }) => (
+  <SectionSubheading {...props} />
 ))`
     text-align: center;
     margin-top: 0;
   `;
 
 
-export const mainSection = styled(({ ...props }) => (
-    <SectionContainer {...props} />
+export const MainSection = styled(({ ...props }) => (
+  <SectionContainer {...props} />
 ))`
 display: flex;
   align-items: center;
@@ -52,8 +54,8 @@ display: flex;
   `;
 
 
-export const imageContainer = styled(({ ...props }) => (
-    <div {...props} />
+export const ImageContainer = styled(({ ...props }) => (
+  <div {...props} />
 ))`
   align-self: center;
   max-width: 25rem;
@@ -64,7 +66,7 @@ export const imageContainer = styled(({ ...props }) => (
   `;
 
 
-export const cardContainer = styled(({ ...props }) => <div {...props} />)`
+export const CardContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-direction: column;
   @media(max-width: 1024px) {

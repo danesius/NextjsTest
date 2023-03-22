@@ -1,5 +1,5 @@
 import { Hero } from "../sections";
-import { Main } from "../sections/Main/";
+import { Main } from "../sections/Main/Main";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -7,31 +7,31 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
-const mainProps = {
-  image: { src: "../resources/video.png", alt: "", width: 400, height: 500 },
+const MainProps = {
+  image: { src: "/img/video.png", alt: "", width: 400, height: 500 },
   title: "Managed agency selection",
   text: "Strengthen your onboarding process",
   order: [
     {
       id: 1,
-      image: { src: "../resources/icon1.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon1.png", alt: "", width: 35, height: 35 },
       title: "Brief",
       text:
-        "Complete brief writing or simple guidance on what to include, we've got you covered",
+        "Complete<b> brief writing or simple guidance<b/> on what to include, we've got you covered",
     },
     {
       id: 2,
-      image: { src: "../resources/icon2.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon2.png", alt: "", width: 35, height: 35 },
       title: "Search",
       text:
-        "In depth agency search covering; criteria matching, door knocking and due-dilligence vetting",
+        "In depth agency search covering; <b>criteria matching<b/>, door knocking and due-dilligence vetting",
     },
     {
       id: 3,
-      image: { src: "../resources/icon3.png", alt: "", width: 35, height: 35 },
+      image: { src: "/img/icon3.png", alt: "", width: 35, height: 35 },
       title: "Pitch",
       text:
-        "Comprehensive pitch management including comms, diary managment and pitch hosting"35
+        "Comprehensive <b>pitch management<b/> including comms, diary managment and pitch hosting"
     },
   ],
 
@@ -51,7 +51,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        < Main {...mainProps} />
+        < Main {...MainProps} />
       </div>
     </>
   );
