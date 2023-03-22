@@ -6,8 +6,7 @@ import { SectionSubheading, SectionParagraph } from "~/components";
 
 
 export const CardContainer = styled(({ ...props }) => <div{...props} />)`
-    margin-right: ${({ position }) =>
-    position === 2 ? "0" : position === 1 ? "1rem" : "2rem"};
+ 
   display: flex;
   background: rgba(244, 244, 244, 255);
   border-radius: 15px;
@@ -24,12 +23,9 @@ export const CardContainer = styled(({ ...props }) => <div{...props} />)`
 
 export const IconContainer = styled(({ ...props }) => <div{...props} />)`
 display: flex;
-max-width: 5rem;
-max-height: 5rem;
-width: 100%;
-height: 100%;
+max-width: 4rem;
+max-height: 4rem;
 justify-content: center;
-align-self: center;
 padding: 2rem;
 
 
@@ -38,12 +34,15 @@ export const ContentContainer = styled(({ ...props }) => <div{...props} />)`
 color: black;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
 font-family: sans-serif;
-
+padding-right:1rem;
 `
 export const StyledTitle = styled(({ ...props }) => <SectionSubheading {...props} />)`
 font-weight: 700;
+h2{
+  margin-bottom:0;
+}
 `
 export const StyledText = styled(({ ...props }) => <SectionParagraph {...props} />)`
+
 `

@@ -10,7 +10,7 @@ flex-direction: column;
   gap: 3rem;
   align-items: center;
   background-image: url("/img/background.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-top: 3rem;
 `;
@@ -37,7 +37,6 @@ export const HeaderSubtext = styled(({ ...props }) => (
   <SectionSubheading {...props} />
 ))`
     text-align: center;
-    margin-top: 0;
   `;
 
 
@@ -46,10 +45,12 @@ export const MainSection = styled(({ ...props }) => (
 ))`
 flex-direction: column;
 gap: 4rem;
-width: min(1100px, 85%);
+width: min(1100px, 100%);
 padding-bottom: 3rem;
+
 @media (min-width: 1024px) {
   flex-direction: row;
+
   
 }
   `;
@@ -70,7 +71,12 @@ export const ImageContainer = styled(({ ...props }) => (
 export const CardContainer = styled(({ ...props }) => <div {...props} />)`
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   @media(max-width: 1024px) {
-    margin: "5rem auto";
+    margin:  0 5rem;
+    row-gap:2rem;
+  }
+  @media(max-width: 550px) {
+    margin:  0 ;
   }
  ` ;
