@@ -1,4 +1,5 @@
 import { Hero } from "../sections";
+import { main } from "../sections/Main/";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -6,6 +7,14 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
+const mainProps = {
+  image: {
+    src: "../resorurces/video.png", alt: "", width: 400, height: 500
+  }
+  title: "Managed agency selection",
+  description: "Strengthen your onboarding process",
+
+}
 
 
 export default function Home() {
@@ -21,7 +30,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        main {...mainProps}
       </div>
     </>
   );
