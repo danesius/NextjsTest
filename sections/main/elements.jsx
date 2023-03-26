@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SectionContainer, SectionHeading, SectionSubheading } from "~/components"
+import { Card } from "../../collections/Card/Card";
 
 
 export const Container = styled(({ ...props }) => (
@@ -79,4 +80,7 @@ export const CardContainer = styled(({ ...props }) => <div {...props} />)`
   @media(max-width: 550px) {
     margin:  0 ;
   }
+ ` ;
+export const StyledCard = styled(({ ...props }) => <Card {...props} />)`
+ 
  ` ;

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Card } from "../../collections/Card/Card";
 import { Container, Header, HeaderText, HeaderSubtext, MainSection, ImageContainer, CardContainer } from "./elements"
 
 export const Main = ({ image, title, text, order, ...props }) => {
@@ -16,7 +15,7 @@ export const Main = ({ image, title, text, order, ...props }) => {
                 </ImageContainer>
                 <CardContainer>
                     {order.map((i) => (
-                        <Card
+                        <StyledCard
                             key={i.id}
                             image={i.image}
                             title={i.title}
